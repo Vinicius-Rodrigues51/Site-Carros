@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/262b954398.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Projeto-05</title>
 </head>
@@ -21,7 +22,7 @@
                         <li><a href="galeria.html">Galeria</a></li>
                         <li><a href="#">Eventos</a></li>
                         <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a id="botao-scroll" href="#">Contato</a></li>
                     </ul>
                 </nav>
 
@@ -166,5 +167,15 @@
             </div><!--container-->
         </footer>
 
+
+        <script>
+            $(document).ready(function() {
+                $('#botao-scroll').click(function(){
+                    $('html,body').animate({
+                        scrollTop: $('#content').offset().top
+                    }, 1500);
+                });
+            });
+        </script>
 </body>
 </html>
