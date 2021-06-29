@@ -465,7 +465,7 @@ section.venda .titulo{
     position: absolute;
     left: 0;
     top: 0;
-    width: 30%;
+    width: 0px;
     height: 100%;
     background-color: #DEDEDE;
 }
@@ -477,7 +477,7 @@ section.venda .titulo{
     border-radius: 10px;
     position: absolute;
     top: -4px;
-    left: 90%;
+    left: -5px;
     cursor: pointer;
 }
 
